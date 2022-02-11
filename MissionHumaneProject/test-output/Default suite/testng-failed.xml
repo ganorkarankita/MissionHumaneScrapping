@@ -5,9 +5,9 @@
     <classes>
       <class name="automatation.testcases.CovidSafePuneTest">
         <methods>
-          <include name="TrialLoop"/>
           <include name="teardown"/>
           <include name="Setup"/>
+          <include name="FullDataLoop"/>
           <include name="readConfig"/>
         </methods>
       </class> <!-- automatation.testcases.CovidSafePuneTest -->

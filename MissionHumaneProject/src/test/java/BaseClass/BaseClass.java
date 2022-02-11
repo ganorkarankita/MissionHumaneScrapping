@@ -34,8 +34,6 @@ public class BaseClass {
 
 	public static void launchurl() throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
-		// System.setProperty("webdriver.chrome.driver", "C:\\AnkitaWork\\Selenium
-		// Drivers\\chromedriver.exe");
 		String browserName = prop.getProperty("browser");
 
 		if (browserName.contains("Chrome")) {
@@ -45,10 +43,11 @@ public class BaseClass {
 		}
 
 		driver.manage().window().maximize();
+
 		// Delete all the cookies
 		driver.manage().deleteAllCookies();
+
 		// Implicit TimeOuts
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.get(prop.getProperty("url"));
 

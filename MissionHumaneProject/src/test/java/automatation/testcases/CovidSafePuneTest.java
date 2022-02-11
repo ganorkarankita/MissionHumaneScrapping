@@ -42,11 +42,4 @@ public class CovidSafePuneTest extends BaseClass {
 
 	}
 
-	@Test(priority = 4)
-	public void TrialLoop() throws InterruptedException, IOException {
-		CovidSafePunePage CPune = new CovidSafePunePage();
-		CPune.TrialLoop();
-
-	}
-
 }
